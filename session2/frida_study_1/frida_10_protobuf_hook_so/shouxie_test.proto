@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message MSG1 {
+    string str1=1;
+    int32 int1=2;
+    string str2=3;
+    message MSG2{
+       string str3=1;
+    }
+    repeated  MSG2 str4=4;
+}
+message MsgRoot{
+    repeated MSG1 msg01=1;
+}
